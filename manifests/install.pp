@@ -8,5 +8,6 @@ class chronos::install {
     require => [
       Package['oracle-java8-installer'],
       Package['mesos'],
+    ]
   }
 }
