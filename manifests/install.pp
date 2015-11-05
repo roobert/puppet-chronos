@@ -7,7 +7,7 @@ class chronos::install {
     ensure  => $::chronos::version,
     require => [
       Package['oracle-java8-installer'],
-      Package['mesos'],
+      Class['mesos::install'],
     ]
   }
 }
